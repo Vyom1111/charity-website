@@ -1,3 +1,4 @@
+// app.mjs
 import express from "express";
 import bodyParser from "body-parser";
 import path from "path";
@@ -11,11 +12,8 @@ const app = express();
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, "public")));
 
-// If you render views:
-import ejs from "ejs";
-app.set("view engine", "ejs");           // or pug/handlebars as needed
-app.set("views", path.join(__dirname, "views"));
+// add a root route (or redirect)
+app.get("/", (req, res) => res.redirect("/home"));
+// or: res.sendFile(path.join(__dirname, "public", "index.html"));
 
-app.get("/", (req, res) => res.redirect("/home")); // or res.render("home")
-
-export default app; // <- no app.listen() here
+export default app; // <-- no app.listen on Vercel
