@@ -1,1 +1,9 @@
+{
+  "version": 2,
+  "routes": [
+    { "src": "/(css|js|img)/(.*)", "dest": "/public/$1/$2" },
+    { "src": "/favicon.ico", "dest": "/public/favicon.ico" },
+    { "src": "/.*", "dest": "/api/index.mjs" }
+  ]
+}
 
