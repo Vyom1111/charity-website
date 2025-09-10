@@ -1,0 +1,266 @@
+<%- include("header") -%>
+<div class="wrapper">
+    <div class="faq">
+        <h2>Contact Us </h2>
+        <hr>
+        <div class="contact-container">
+            <div class="form">
+                <div class="contact-info">
+                    <h3>Get in touch</h3>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                        dolorum adipisci recusandae praesentium dicta!
+                    </p>
+
+                    <div class="info">
+                        <div class="information">
+                          <img src="img/location.png" class="icon" alt="" />
+                          <p>Maheshpur, Varanasi
+
+                            Uttar Pradesh, 221106</p>
+                        </div>
+                        <div class="information">
+                          <img src="img/email.png" class="icon" alt="" />
+                          <p>anantppy@gmail.com</p>
+                        </div>
+                        <div class="information">
+                          <img src="img/phone.png" class="icon" alt="" />
+                          <p>+91 9532022286</p>
+                        </div>
+                      </div>
+            
+                      <div class="social-media">
+                        <p>Connect with us :</p>
+                        <div class="social-icons">
+                          <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                          </a>
+                          <a href="#">
+                            <i class="fab fa-twitter"></i>
+                          </a>
+                          <a href="#">
+                            <i class="fab fa-instagram"></i>
+                          </a>
+                          <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                          </a>
+                          <a href="#">
+                            <i class="fab fa-whatsapp"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                
+
+                <div class="contact-form">
+                    <span class="round one"></span>
+                    <span class="round two"></span>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <h3>Contact Us</h3>
+                        <input type="hidden" name="access_key" value="866a7150-283f-4314-ae46-c228514b17ce">
+                        <div class="input-container">
+                            <input type="text" name="name" class="input">
+                            <label for="">Your Name</label>
+                            <span>Your Name</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" name="email" class="input">
+                            <label for="">Email</label>
+                            <span>Email</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="tel" name="phone" class="input">
+                            <label for="">Phone</label>
+                            <span>Phone</span>
+                        </div>
+                        
+                        <div class="input-container textarea">
+                            <textarea name="message" class="input"></textarea>
+                            <label for="">Message</label>
+                            <span>Message</span>
+                        </div>
+                        <input type="submit" value="Send" class="btn">
+                    </form>
+                </div>
+            </div>
+            <h3 class="faq-header">FAQs</h3>
+            
+        </div>
+    </div>
+    <div class="faq-container">
+                
+                
+      <ul class="accordion">
+          <li>
+              <input type="radio" name="accordion"  id="">
+              <label for="">Question 1</label>
+              <div class="answer">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia culpa ipsam, totam dolorem cumque voluptas hic iusto ducimus ut repellendus sapiente eligendi architecto quisquam? Harum odio impedit necessitatibus porro? Ipsam?</p>
+              </div>
+          </li>
+          <li>
+            <input type="radio" name="accordion" id="">
+            <label for="">Question 2</label>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia culpa ipsam, totam dolorem cumque voluptas hic iusto ducimus ut repellendus sapiente eligendi architecto quisquam? Harum odio impedit necessitatibus porro? Ipsam?</p>
+            </div>
+          </li>
+          <li>
+            <input type="radio" name="accordion" id="">
+            <label for="">Question 3</label>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia culpa ipsam, totam dolorem cumque voluptas hic iusto ducimus ut repellendus sapiente eligendi architecto quisquam? Harum odio impedit necessitatibus porro? Ipsam?</p>
+            </div>
+          </li>
+          <li>
+            <input type="radio" name="accordion" id="">
+            <label for="">Question 4</label>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia culpa ipsam, totam dolorem cumque voluptas hic iusto ducimus ut repellendus sapiente eligendi architecto quisquam? Harum odio impedit necessitatibus porro? Ipsam?</p>
+            </div>
+          </li>
+          <li>
+            <input type="radio" name="accordion" id="">
+            <label for="">Question 5</label>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia culpa ipsam, totam dolorem cumque voluptas hic iusto ducimus ut repellendus sapiente eligendi architecto quisquam? Harum odio impedit necessitatibus porro? Ipsam?</p>
+            </div>
+          </li>
+      </ul>
+  </div>
+    <style>
+      .faq h2{
+        color: #fafafa;
+      }
+
+      .faq{
+        padding-top: 2rem;
+        padding-bottom: 0rem;
+      }
+
+      .wrapper::before{
+        
+        transform: translateZ(-10px) scale(2);
+        filter: blur(3px);
+        /* background-image: url('img/og_vision.jpg'); */
+        
+        background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8)), url('img/call.jpeg') ;
+        background-size: cover ;
+        content: '';
+        position: absolute;
+        inset: 0;
+        object-fit: cover;
+        padding-bottom: 2rem;
+        
+      }
+
+      @media (max-width: 850px) {
+      .form {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-info:before {
+        bottom: initial;
+        top: -75px;
+        right: 65px;
+        transform: scale(0.95);
+      }
+
+      .contact-form:before {
+        top: -13px;
+        left: initial;
+        right: 70px;
+      }
+
+      .text {
+        margin: 1rem 0 1.5rem 0;
+      }
+
+      .social-media {
+        padding: 1.5rem 0 0 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+    /* .contact-container {
+      padding: 1.5rem 0 1.5rem 1.5rem;
+    } */
+    .faq{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .contact-info:before {
+      display: none;
+    }
+
+    
+
+    
+    .contact-info {
+      padding: 1.7rem 1.6rem;
+    }
+
+    .text,
+    .information,
+    .social-media p {
+      font-size: 0.8rem;
+    }
+
+    .title {
+      font-size: 1.15rem;
+    }
+
+    .social-icons a {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+    }
+
+    .icon {
+      width: 23px;
+    }
+
+    .input {
+      padding: 0.45rem 1.2rem;
+    }
+
+    .btn {
+      padding: 0.45rem 1.2rem;
+    }
+  }
+
+    </style>
+    <script>
+        const inputs = document.querySelectorAll(".input");
+        const radios = document.querySelectorAll(".accordion li")
+
+        function clickFunc(){
+          // console.log('radio')
+          // console.log(this)
+          const clickedRadioInput = this.querySelector('input[type="radio"]');
+          clickedRadioInput.checked = true;
+        }
+
+        radios.forEach((radio)=>{
+          radio.addEventListener('click', clickFunc)
+        })
+
+        function focusFunc() {
+        let parent = this.parentNode;
+        parent.classList.add("focus");
+        }
+
+        function blurFunc() {
+        let parent = this.parentNode;
+        if (this.value == "") {
+            parent.classList.remove("focus");
+        }
+        }
+
+        inputs.forEach((input) => {
+        input.addEventListener("focus", focusFunc);
+        input.addEventListener("blur", blurFunc);
+        });
+    </script>
+<%- include("footer") -%>
